@@ -1,0 +1,32 @@
+:root{
+    --black: #000;
+    --white: #fff;
+    --orange: #E38D3D;
+    --page-horizontal-padding: 5%;
+}
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-size: 0,6666rem;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*reset*/
+  }
+  .navigation a {
+    color: var(--white);
+    text-decoration: none;
+  }
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+  .navigation li {
+    display: inline;
+    margin: 45px;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+  }
