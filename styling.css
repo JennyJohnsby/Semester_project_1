@@ -1,5 +1,6 @@
-@import url(./often.css);
+@import url(./common.css);
 
-body{
-    background-color: var(--black);    
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
 }
