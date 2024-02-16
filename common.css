@@ -1,39 +1,121 @@
-:root{
-    --black: #000;
-    --white: #fff;
-    --orange: #E38D3D;
+:root {
+  --black: #000;
+  --white: #fff;
+  --orange: #e38d3d;
 }
-body{
-    background-color: var(--black);
-    color: var(--white);
-    font-family: "Saira Semi Condensed", sans-serif;
+
+.header-img {
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  margin: 0%;
 }
+.header-img-container {
+  position: relative;
+}
+.header-logo {
+  position: absolute;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  top: 85%;
+  width: 80%;
+  max-width: 483px;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Saira Semi Condensed", sans-serif;
+  margin: 0%;
+}
+
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    /*reset*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /*reset*/
+}
+main {
+  font-style: normal;
+  font-size: 1.35rem;
+}
+section{
+  display: grid;
+}
+.main-layout{
+  display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
+
+}
+.left{
+  align-content: center;
+  justify-self: start;
+  text-align: start;
+}
+.right{
+  align-content: center;
+  justify-self: end;
+  text-align: end;
+}
+.navigation {
+  background-color: var(--black);
+  text-align: center;
+  font-size: 2rem;
+  line-height: normal;
+  padding: 20px 0;
+  width: 100%;
+
+}
+.navigation a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.navigation li {
+  display: inline;
+  margin: 25px;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+
+.info-with-pictures {
+  background-color: var(--orange);
+grid-column: 1 / -1 ;
+color: var(--black);
+font-size: 24px;
+font-weight: 700;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+align-items: center;
+justify-items: center;
+text-align: center;
+}
+footer{
+  padding-top: 2rem;
+}
+.location{
+  padding-top: 13rem;
+  padding-left: 2rem;
+}
+.footer-img{
+max-width: ;
+}
+.the-moon{
+  
+}
+@media (max-width:1200px){
+  main{
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
-  .navigation a {
-    color: var(--white);
-    text-decoration: none;
-  }
-  .navigation a:hover {
-    text-decoration: underline;
-  }
-  .navigation li {
-    display: inline;
-    margin: 45px;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .header-img {
-    width: 100%;
-    height: 530px;
-    object-fit: cover;
-    margin: 0%;
-  }
-  .header-img-container {
-    position: relative;
-  }
+
+}
