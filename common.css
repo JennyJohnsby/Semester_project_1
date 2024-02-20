@@ -37,7 +37,8 @@ ul {
 }
 main {
   font-style: normal;
-  font-size: 1.35rem;
+  font-size: 1.55rem;
+  
 }
 section{
   display: grid;
@@ -45,18 +46,22 @@ section{
 .main-layout{
   display: grid;
 grid-template-columns: 1fr 1fr;
-gap: 2rem;
+margin: 2rem;
+row-gap: 2rem;
+column-gap: 1.75rem;
 
 }
 .left{
   align-content: center;
   justify-self: start;
   text-align: start;
+  
 }
 .right{
   align-content: center;
   justify-self: end;
   text-align: end;
+  
 }
 .navigation {
   background-color: var(--black);
@@ -106,7 +111,9 @@ footer{
   padding-left: 2rem;
 }
 .footer-img{
-max-width: ;
+object-fit: cover;
+width: 100%;
+
 }
 .the-moon{
   
