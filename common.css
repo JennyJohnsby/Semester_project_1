@@ -3,7 +3,6 @@
   --white: #fff;
   --orange: #e38d3d;
 }
-
 .header-img {
   width: 100%;
   height: 530px;
@@ -21,48 +20,39 @@
   width: 80%;
   max-width: 483px;
 }
-
 body {
   background-color: var(--black);
   color: var(--white);
   font-family: "Saira Semi Condensed", sans-serif;
   margin: 0%;
+  font-style: normal;
+  font-size: 1.55rem;
 }
-
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
   /*reset*/
 }
-main {
-  font-style: normal;
-  font-size: 1.55rem;
-  
-}
-section{
+section {
   display: grid;
 }
-.main-layout{
+.main-layout {
   display: grid;
-grid-template-columns: 1fr 1fr;
-margin: 2rem;
-row-gap: 2rem;
-column-gap: 1.75rem;
-
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem;
+  row-gap: 2rem;
+  column-gap: 1.75rem;
 }
-.left{
+.text {
   align-content: center;
-  justify-self: start;
   text-align: start;
-  
 }
-.right{
-  align-content: center;
-  justify-self: end;
-  text-align: end;
-  
+.picture {
+  align-items: center;
+  justify-content: center;
 }
+
 .navigation {
   background-color: var(--black);
   text-align: center;
@@ -70,7 +60,6 @@ column-gap: 1.75rem;
   line-height: normal;
   padding: 20px 0;
   width: 100%;
-
 }
 .navigation a {
   color: var(--white);
@@ -89,40 +78,36 @@ column-gap: 1.75rem;
   font-weight: 700;
 }
 
-
-
 .info-with-pictures {
   background-color: var(--orange);
-grid-column: 1 / -1 ;
-color: var(--black);
-font-size: 24px;
-font-weight: 700;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-align-items: center;
-justify-items: center;
-text-align: center;
+  grid-column: 1 / -1;
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }
-footer{
-  padding-top: 2rem;
-}
-.location{
-  padding-top: 13rem;
+
+.location {
+  padding-top: 3rem;
   padding-left: 2rem;
 }
-.footer-img{
-object-fit: cover;
-width: 100%;
+.footer-img {
+  object-fit: cover;
+  width: 100%;
+}
 
-}
-.the-moon{
-  
-}
-@media (max-width:1200px){
-  main{
+@media (max-width: 1200px) {
+  main {
     font-size: 1rem;
     flex-direction: column;
     align-items: center;
   }
-
+  .main-layout {
+    flex-direction: column;
+    align-items: center;
+  }
 }

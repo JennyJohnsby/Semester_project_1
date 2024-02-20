@@ -1,1 +1,22 @@
 @import url(./common.css);
+.banner{
+    background-color: var(--orange);
+    color: var(--black);
+    grid-column: 1 / -1;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .events{
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--black);
+    text-align: center;
+    gap: 5rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    align-content: center;
+  }
+  .events section{
+    background-color: var(--orange);
+  }
+  
