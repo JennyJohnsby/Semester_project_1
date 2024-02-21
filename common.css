@@ -34,16 +34,7 @@ ul {
   padding: 0;
   /*reset*/
 }
-section {
-  display: grid;
-}
-.main-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 2rem;
-  row-gap: 2rem;
-  column-gap: 1.75rem;
-}
+
 .text {
   align-content: center;
   text-align: start;

@@ -1,5 +1,14 @@
 @import url(./common.css);
-
+section {
+  display: grid;
+}
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem;
+  row-gap: 2rem;
+  column-gap: 1.75rem;
+}
 
 .the-moon{
     position: absolute;

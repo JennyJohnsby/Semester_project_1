@@ -1,4 +1,14 @@
 @import url(./common.css);
+section {
+  display: grid;
+}
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem;
+  row-gap: 2rem;
+  column-gap: 1.75rem;
+}
 .banner{
     background-color: var(--orange);
     color: var(--black);
@@ -14,9 +24,11 @@
     gap: 5rem;
     font-size: 1.35rem;
     font-weight: 700;
-    align-content: center;
-  }
+    }
   .events section{
     background-color: var(--orange);
+    align-content: center;
+    justify-content: center;
   }
+  
   
