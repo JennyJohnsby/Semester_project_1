@@ -1,12 +1,1 @@
 @import url(./common.css);
-.header-img{
-
-}
-.main-layout{
-    display: flex;
-    flex-direction: column; 
-}
-.flex-boxes{
-    display: flex;
-    flex-direction: row;
-}
