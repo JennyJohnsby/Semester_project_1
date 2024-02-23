@@ -44,7 +44,7 @@ ul {
   gap: 2rem;
   align-items: center;
   padding: 2rem;
-}
+  }
 .picture {
   max-width: 100%;
 }
@@ -116,6 +116,10 @@ ul {
   }
   .info-with-pictures {
     grid-template-columns: 1fr 1fr;
+  }
+  .info-with-pictures img{
+    height: auto;
+    max-width: 100%;
   }
   .location {
     font-size: 1.55rem;
@@ -196,7 +200,7 @@ ul {
     background-color: var(--orange);
 
     color: var(--black);
-    max-width: 15rem;
+    /* max-width: 15rem; */
     /*min-height: 100vh;*/
   }
   .burger-menu:has(input:checked) + .sidebar {
