@@ -1,2 +1,15 @@
 @import url(./common.css);
-
+.main-layout h2, h3, h4, h5{
+    text-decoration: underline;
+}
+.main-layout h4{
+    margin-bottom:0%;
+    margin-top: 10px;
+}
+.main-layout p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.info-boxes{
+    padding: 0 4rem;
+}
