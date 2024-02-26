@@ -4,7 +4,6 @@
     color: var(--black);
     grid-column: 1 / -1;
     text-align: center;
-    text-decoration: underline;
   }
   .events{
     display: grid;
@@ -20,7 +19,7 @@
   .events section{
     background-color: var(--orange);
     align-content: center;
-    justify-content: center;
+    justify-self: center;
   }
   
   

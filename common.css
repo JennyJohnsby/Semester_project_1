@@ -69,7 +69,7 @@ ul {
 }
 .navigation li {
   display: inline;
-  margin: 25px;
+  margin: 1.55rem;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -91,12 +91,14 @@ ul {
 .location {
   padding-top: 3rem;
   padding-left: 2rem;
+  text-decoration: underline;
 }
 .footer-img {
   object-fit: cover;
   max-width: 100%;
   margin: 0%;
   display: block;
+  width: 1701px;
 }
 
 @media (max-width: 1290px) {
@@ -175,49 +177,43 @@ ul {
       rotate var(--amimation-timing), translate var(--amimation-timing),
       background-color var(--amimation-timing);
   }
-.burger-menu input {
-  appearance: none;
-  padding: 0%;
-  margin: 0%;
-  outline: none;
-  pointer-events: none;
-}
-.burger-menu:has(input:checked)::before {
-  rotate: 45deg;
-  width: var(--x-width);
-  translate: 0 calc(var(--bar-height) / -2);
-  background-color: var(--black);
-}
-.burger-menu:has(input:checked)::after {
-  rotate: -45deg;
-  width: var(--x-width);
-  translate: 0 calc(var(--bar-height) / 2);
-  background-color: var(--black);
-}
-.burger-menu input:checked {
-  opacity: 0;
-  width: 0;
-}
-.navigation {
-  padding: 1.75rem 0.5rem;
-
-  transition: translate var(--amimation-timing);
-  translate: -100%;
-  background-color: var(--orange);
-  color: var(--black);
-  /* min-height: 100vh; */
-}
-.sidebar .navigation a {
-  font-size: 1.55rem;
-}
-.burger-menu:has(input:checked) + .sidebar {
-  translate: 0;
-}
-
-.navigation {
-  background-color: var(--orange);
-  text-align: center;
-  gap: 1rem;
-  color: #fff;
-}
+  .burger-menu input {
+    appearance: none;
+    padding: 0%;
+    margin: 0%;
+    outline: none;
+    pointer-events: none;
+  }
+  .burger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+    background-color: var(--black);
+  }
+  .burger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+    background-color: var(--black);
+  }
+  .burger-menu input:checked {
+    opacity: 0;
+    width: 0;
+  }
+  .navigation {
+    padding: 1.75rem 0.5rem;
+    transition: translate var(--amimation-timing);
+    translate: -100%;
+    background-color: var(--orange);
+    text-align: center;
+    gap: 1rem;
+  }
+  .sidebar .navigation a {
+    font-size: 1.55rem;
+    color: var(--black);
+  }
+  .burger-menu:has(input:checked) + .sidebar {
+    translate: 100%;
+    transition: var(--amimation-timing);
+  }
 }
