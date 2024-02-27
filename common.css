@@ -30,9 +30,9 @@ ul {
   left: 25%;
   transform: translate(-50%, -50%);
   top: 85%;
-  width: 80%;
+  width: 100%;
   max-width: 483px;
-  min-width: 30%;
+
 }
 .main-layout {
   display: flex;
@@ -92,13 +92,16 @@ ul {
   padding-top: 3rem;
   padding-left: 2rem;
   text-decoration: underline;
+  position: absolute;
 }
 .footer-img {
   object-fit: cover;
+  object-position: 70% 9%;
   max-width: 100%;
   margin: 0%;
   display: block;
   width: 1701px;
+  height: 650px;
 }
 
 @media (max-width: 1290px) {
@@ -118,6 +121,7 @@ ul {
   .info-with-pictures {
     grid-template-columns: 0.5fr 0.5fr;
   }
+ 
   .info-with-pictures img {
     height: auto;
     max-width: 100%;
@@ -221,5 +225,8 @@ ul {
   .burger-menu:has(input:checked) + .sidebar {
     transition: var(--amimation-timing);
     transform: translateX(0);
+  }
+  .form-box-wrapper{
+    flex-direction: column;
   }
 }

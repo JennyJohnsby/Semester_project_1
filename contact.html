@@ -28,15 +28,20 @@
           alt="our logo, a polarbear and our name"
         />
       </div>
-      <nav class="navigation">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./exhibitions.html">Exhibitions</a></li>
-          <li><a href="./contribution.html">Contribution</a></li>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Terms & Conditions</a></li>
-        </ul>
-      </nav>
+      <label class="burger-menu">
+        <input type="checkbox" />
+      </label>
+      <aside class="sidebar">
+        <nav class="navigation">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./exhibitions.html">Exhibitions</a></li>
+            <li><a href="./contribution.html">Contribution</a></li>
+            <li><a href="./terms.html">Privacy Policy</a></li>
+            <li><a href="./terms.html">Terms & Conditions</a></li>
+          </ul>
+        </nav>
+      </aside>
     </header>
     <main class="main-layout">
       <div class="flex-boxes">
@@ -64,29 +69,29 @@
       </div>
       <div class="flex-boxes">
         <div>
-        <h2>For teachers</h2>
-        <p>
-          As a community-driven museum, we want to work with schools to create
-          places of learning and exploring. Our team are on hand to give your
-          students guided tours of the museum, teach them in our learning
-          laboratory, and provide great video presentations that will excite and
-          inspire them. Please get in touch with us here to find out more about
-          our facilities and to arrange a time to bring your students through
-          for a visit
-        </p>
-        <h2>Researchers</h2>
-        Are you looking to get involved with our team of researchers and
-        academics? Our museum offers various ways for you to use our resources
-        and contribute towards them. We have online records, laboratory space,
-        and a working relationship with a number of universities around the
-        country.
-      </div>
+          <h2>For teachers</h2>
+          <p>
+            As a community-driven museum, we want to work with schools to create
+            places of learning and exploring. Our team are on hand to give your
+            students guided tours of the museum, teach them in our learning
+            laboratory, and provide great video presentations that will excite
+            and inspire them. Please get in touch with us here to find out more
+            about our facilities and to arrange a time to bring your students
+            through for a visit
+          </p>
+          <h2>Researchers</h2>
+          Are you looking to get involved with our team of researchers and
+          academics? Our museum offers various ways for you to use our resources
+          and contribute towards them. We have online records, laboratory space,
+          and a working relationship with a number of universities around the
+          country.
+        </div>
         <img
-          class="picture" 
+          class="picture"
           src="./assets/contact_iceberg-min.png"
           alt="an overview of an iceberg"
         />
-    </div>
+      </div>
       <section class="info-with-pictures">
         <p>
           Opening hours <br />
@@ -111,9 +116,43 @@
           museum.
         </p>
       </section>
-      <section class="contact-form">
-        <img src="./assets/contact_robot-min.png" alt="a kind robot waveing" />
-      </section>
+      <div class="form-box-wrapper">
+        <div class="form-box">
+          <h1>Contact Us</h1>
+          <form>
+            <label for="cname"> Contact name:</label>
+            <input
+              type="text"
+              id="cname"
+              name="cname"
+              placeholder="Full Name"
+              required
+            />
+            <label for="email">E-mail</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="email@mail.com"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea 
+            id="message"
+            name="message"
+            placeholder="Message"
+            required
+            >
+            </textarea>
+            <a href="./index.html" class="link-button">Submit</a>
+          </form>
+        </div>
+        <img
+          class="form-img"
+          src="./assets/contact_robot-min.png"
+          alt="a kind robot waveing"
+        />
+      </div>
     </main>
     <footer>
       <h3 class="location">
