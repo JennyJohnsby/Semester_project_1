@@ -3,6 +3,7 @@
     background-color: var(--orange);
     color: var(--black);
     grid-column: 1 / -1;
+    font-weight: 800;
     text-align: center;
   }
   .events{
@@ -11,7 +12,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     color: var(--black);
     text-align: center;
-    gap: 5rem;
+    gap: 3rem;
     font-size: 1.35rem;
     font-weight: 700;
     padding: 2rem;
@@ -19,7 +20,8 @@
   .events section{
     background-color: var(--orange);
     align-content: center;
-    justify-self: center;
+    justify-content: center;
   }
+  
   
   
