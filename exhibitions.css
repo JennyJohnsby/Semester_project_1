@@ -1,7 +1,10 @@
 @import url(./common.css);
+body{
+  background-color:#CFBD8E ;
+}
 .banner{
-    background-color: var(--orange);
-    color: var(--black);
+    background-color: #ADCF81 ;
+    color: var(--text);
     grid-column: 1 / -1;
     font-weight: 800;
     text-align: center;
@@ -10,7 +13,7 @@
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: 1fr 1fr 1fr;
-    color: var(--black);
+    color: var(--text);
     text-align: center;
     gap: 3rem;
     font-size: 1.35rem;
@@ -18,9 +21,15 @@
     padding: 2rem;
     }
   .events section{
-    background-color: var(--orange);
+    background-color: #ADCF81;
     align-content: center;
     justify-content: center;
+  }
+  .events p{
+    margin: 20px;
+  }
+  .info-with-pictures{
+    background-color: #ADCF81;
   }
   
   

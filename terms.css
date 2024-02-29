@@ -1,4 +1,10 @@
 @import url(./common.css);
+body{
+    background-color: #ADCF81;
+}
+.info-with-pictures{
+    background-color: #8193CF;
+}
 .main-layout h2, h3, h4, h5{
     text-decoration: underline;
 }

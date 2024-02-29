@@ -1,11 +1,10 @@
 @import url(./common.css);
-.fossil-img{
-    margin-left: 30%;
-    max-width: 650px;
-    width: 100%;
+body{
+  background-color: #8193CF ;
 }
+
 .yellow-bar {
-    background-color: var(--orange);
+  background-color: #AF8ECF;
     grid-column: 1 / -1;
     color: var(--black);
     font-size: 24px;

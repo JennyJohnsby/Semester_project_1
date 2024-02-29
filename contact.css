@@ -1,4 +1,10 @@
 @import url(./common.css);
+body{
+  background-color: #ADCF81;
+}
+.info-with-pictures{
+  background-color: #CFBD8E;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -21,18 +27,18 @@ form {
 form input {
   width: 100%;
   height: 25px;
-  background-color:#303030;
-  color: var(--white);
+  background-color:#CFBD8E;
+  color: var(--text);
 }
 form textarea {
   width: 100%;
   height: 200px;
-  background-color:#303030;
-  color: var(--white);
+  background-color:#CFBD8E;
+  color: var(--text);
 }
 .link-button {
-  background-color: var(--orange);
-  color: var(--black);
+  background-color: #CFBD8E;
+  color: var(--text);
   text-decoration: none;
   border-radius: 1rem;
   justify-self: center;
