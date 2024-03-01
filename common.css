@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   --text: #1E0339;
   --footer: #8193CF
@@ -7,13 +12,13 @@ body {
   font-family: "Saira Semi Condensed", sans-serif;
   margin: 0%;
   font-size: 1.55rem;
+
   font-weight: 700;
 }
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  /*reset*/
 }
 .header-img {
   height: auto;
@@ -27,9 +32,8 @@ ul {
 }
 .header-logo {
   position:absolute;
-  left: 72px;
-  top: 473px;
-  height: auto;
+  left: 10%;
+  bottom: 10%;
   width: 100%;
   max-width: 339px;
 }
@@ -43,7 +47,7 @@ ul {
   gap: 2rem;
   align-items: center;
   padding: 2rem;
-  max-width: 1700px ;
+  max-width: 100%;
 }
 .picture {
   max-width: 100%;
@@ -85,15 +89,19 @@ ul {
   text-align: left;
 }
 footer{
+  flex-wrap: wrap;
   background-color: var(--footer) ;
   height: 436px;
   display: flex;
-  gap: 35rem;
+  gap: 20rem;
   align-items: center;
   justify-content: center;
 }
 .location {
   justify-content: center;
+}
+.logo-footer{
+  height: auto;
 }
 
 @media (max-width: 1290px) {
@@ -108,12 +116,11 @@ footer{
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
   }
   .info-with-pictures {
     grid-template-columns: 0.5fr 0.5fr;
   }
- 
   .info-with-pictures img {
     height: auto;
     max-width: 100%;
@@ -121,7 +128,10 @@ footer{
   .location {
     font-size: 1.55rem;
   }
-
+  footer{
+    flex-direction: column;
+    gap: 3rem;
+  }
   *,
   *::after,
   *::before {
@@ -135,28 +145,25 @@ footer{
     --amimation-timing: 200ms ease-in-out;
     --burger-height: calc(var(--bar-height) * 3 + var(--burger-gap) * 2);
   }
-
   .burger-menu {
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
-
     display: flex;
     flex-direction: column;
     gap: var(--burger-gap);
-    /* width: max-content; */
     position: absolute;
     padding: 1rem 0 0 1rem;
     z-index: 2;
   }
 
   .burger-menu:has(input:checked) {
-    background-color: var(--orange);
+    background-color:#C6B4DE;
     width: var(--bar-width);
   }
   .burger-menu:has(input:focus-visible)::before,
   .burger-menu:has(input:focus-visible)::after,
   .burger-menu input:focus-visible {
     border: 1px solid var(--black);
-    box-shadow: 0 0 0 1px var(--orange);
+    box-shadow: 0 0 0 1px var(--text);
   }
 
   .burger-menu::before,
@@ -166,7 +173,7 @@ footer{
     width: var(--bar-width);
     height: var(--bar-height);
     border-radius: 9999px;
-    background-color: var(--orange);
+    background-color: var(--text);
     transform-origin: left center;
     transition: opacity var(--amimation-timing), width var(--amimation-timing),
       rotate var(--amimation-timing), translate var(--amimation-timing),
@@ -183,13 +190,13 @@ footer{
     rotate: 45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / -2);
-    background-color: var(--black);
+    background-color: var(--text);
   }
   .burger-menu:has(input:checked)::after {
     rotate: -45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / 2);
-    background-color: var(--black);
+    background-color: var(--text);
   }
   .burger-menu input:checked {
     opacity: 0;
@@ -198,17 +205,17 @@ footer{
   .navigation {
     padding: 1.75rem 1.75rem;
     transition: translate var(--amimation-timing);
-    background-color: var(--orange);
+    background-color: #C6B4DE;
     text-align: center;
   }
   .sidebar .navigation a {
     font-size: 1.55rem;
-    color: var(--black);
+    color: var(--text);
   }
   .sidebar {
     top: 0;
     left: 0;
-    background-color: var(--orange);
+    background-color: #C6B4DE;
     opacity: 100%;
     z-index: 2;
     transform: translateX(-100%);
