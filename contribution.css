@@ -3,7 +3,7 @@ body{
   background-color: #8193CF ;
 }
 
-.yellow-bar {
+.purple-bar {
   background-color: #AF8ECF;
     grid-column: 1 / -1;
     color: var(--black);
